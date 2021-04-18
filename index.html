@@ -19,23 +19,20 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="styles.css
     "
-    /> -->
+    />
     <title>Frontend Mentor | Meet Landing Page</title>
   </head>
   <body>
     <header>
       <img class="logo" src="assets/logo.svg" alt="logo" />
-      <img
-        src="assets/tablet/image-hero.png"
-        alt="hero image"
-        class="hero-img"
-      />
+      <div class="hero-img-mobile"></div>
+      <div class="hero-img-desktop"></div>
       <h1>Group Chat for Everyone</h1>
-      <p>
+      <p class="header-text">
         Meet makes it easy to connect with others face-to-face virtually and
         collaborate across any device.
       </p>
@@ -47,58 +44,72 @@
       </div>
     </header>
     <main>
-      <div class="transition-container">
+      <div class="transition-container-main">
         <div class="transition-line"></div>
-        <div class="transition-num">01</div>
+        <div class="transition-num">
+          <p>01</p>
+        </div>
       </div>
       <div class="img-container">
-        <div class="img-row">
-          <img
-            src="assets/desktop/image-woman-in-videocall.jpg"
-            alt="woman in videocall"
-          />
-          <img
-            src="assets/desktop/image-women-videochatting.jpg"
-            alt="woman videochatting"
-          />
-        </div>
-        <div class="img-row">
-          <img
-            src="assets/desktop/image-men-in-meeting.jpg"
-            alt="men in meeting"
-          />
-          <img src="assets/desktop/image-man-texting.jpg" alt="man texting" />
-        </div>
+        <img
+          class="grid-img"
+          src="assets/desktop/image-woman-in-videocall.jpg"
+          alt="woman in videocall"
+        />
+        <img
+          class="grid-img"
+          src="assets/desktop/image-women-videochatting.jpg"
+          alt="woman videochatting"
+        />
+        <img
+          class="grid-img"
+          src="assets/desktop/image-men-in-meeting.jpg"
+          alt="men in meeting"
+        />
+        <img
+          class="grid-img"
+          src="assets/desktop/image-man-texting.jpg"
+          alt="man texting"
+        />
       </div>
-      <span class="overline">Built for modern use</span>
-      <h3>Smarter meetings, all in one place</h3>
-      <p>
-        Send messages, share files, show your screen, and record your meetings —
-        all in one workspace. Control who can join with invite-only team access,
-        data encryption, and data export.
-      </p>
+      <div class="main-text">
+        <div class="overline">Built for modern use</div>
+        <h2 class="main-h2">Smarter meetings, all in one place</h2>
+        <p>
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </div>
     </main>
+    <!-- The footer is outside container for background image -->
     <footer>
       <div class="transition-container">
         <div class="transition-line"></div>
         <div class="transition-num">02</div>
       </div>
-      <h2>Experience more together</h2>
-      <p>
+      <h2 class="footer-h2">Experience more together</h2>
+      <p class="footer-p">
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
       </p>
-      <button class="btn btn-secondary">
+      <button class="btn btn-secondary footer-btn">
         Download <span class="version-secondary">v1.3</span>
       </button>
-
       <!-- Footer Credit -->
       <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://mattdillemuth.com" target="_blank">Matt Dillemuth</a>.
+        <div>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor
+          </a>
+        </div>
+        <div>
+          Coded by
+          <a class="name" href="https://mattdillemuth.com" target="_blank"
+            >Matt Dillemuth</a
+          >
+        </div>
       </div>
     </footer>
   </body>

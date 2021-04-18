@@ -10,7 +10,6 @@ This is my solution to the [Meet Landing Page challenge on Frontend Mentor](http
   - [Links](#links)
 - [My Process](#my-process)
   - [Built With](#built-with)
-  - [What I Learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -54,10 +53,6 @@ Users should be able to:
   - Flexbox
 - Mobile-First workflow
 - Figma
-
-### What I Learned
-
-I learned how to better document and explain my proces of working through a small project like this.
 
 ## Author
 

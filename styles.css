@@ -1,0 +1,295 @@
+/* Custom Properties */
+:root {
+  --bg-color: #fafafa;
+  --primary-color: #4d96a9;
+  --primary-btn-text-color: #8fe3f1;
+  --primary-btn-hover: #71c0d4;
+  --secondary-color: #855fb1;
+  --secondary-btn-text-color: #d9b8ff;
+  --secondary-btn-hover: #b18bdd;
+  --dark-text-color: #28283d;
+  --gray-text-color: #87879d;
+}
+
+/* Resets */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove defaults */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  padding: 48px 24px;
+  padding-bottom: 600px;
+}
+
+/* Typography */
+h1 {
+  color: var(--dark-text-color);
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 800;
+}
+
+h2 {
+  color: var(--dark-text-color);
+  font-size: 36px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+p {
+  color: var(--gray-text-color);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.overline {
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+.btn {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  border-radius: 29px;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.version {
+  color: var(--primary-btn-text-color);
+}
+
+.version-primary {
+  color: var(--primary-btn-text-color);
+}
+
+.btn-primary {
+  padding: 16px 40px;
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-btn-hover);
+}
+
+.btn-secondary {
+  padding: 16px 30px;
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-btn-hover);
+}
+
+.version-secondary {
+  color: var(--secondary-btn-text-color);
+}
+
+/* Header Section */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 54px;
+}
+
+.hero-img-mobile {
+  height: 153px;
+  width: 414px;
+  background-image: url('./assets/tablet/image-hero.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 48px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.header-text {
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  margin-bottom: 16px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.transition-container-main {
+  margin-bottom: 64px;
+}
+
+/* The line above the cirle with number inside it */
+.transition-line {
+  margin: 0 auto;
+  height: 84px;
+  background-color: var(--gray-text-color);
+  width: 1px;
+  opacity: 0.25;
+}
+
+/* Makes the circle with the number inside of it */
+.transition-num {
+  margin: 0 auto;
+  height: 55px;
+  width: 55px;
+  color: var(--gray-text-color);
+  border: 1px solid var(--gray-text-color);
+  border-radius: 100%;
+  opacity: 0.25;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Section */
+main {
+  margin-bottom: 64px;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-columns: repeat(2, 150px);
+  gap: 25px;
+  margin-bottom: 64px;
+}
+
+.grid-img {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.main-text {
+  max-width: 573px;
+}
+
+.overline {
+  margin-bottom: 24px;
+}
+
+.main-h2 {
+  margin-bottom: 32px;
+}
+
+/* Footer Section */
+footer {
+  width: calc(100% + 48px);
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-h2 {
+  color: var(--bg-color);
+  margin-bottom: 24px;
+}
+
+.footer-p {
+  color: var(--bg-color);
+  margin-bottom: 32px;
+}
+
+.footer-btn {
+  margin-bottom: 64px;
+}
+
+.attribution {
+  text-align: center;
+  width: 100%;
+  color: var(--dark-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bg-color);
+}
+.name {
+  color: orange;
+}
+
+/* Tablet Media Query */
+@media screen and (min-width: 768px) {
+  .hero-img-mobile {
+    height: 303px;
+    width: 820px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 1400px) {
+  /* Replace hero img  */
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
