@@ -11,8 +11,6 @@ This is my solution to the [Meet Landing Page challenge on Frontend Mentor](http
 - [My Process](#my-process)
   - [Built With](#built-with)
   - [What I Learned](#what-i-learned)
-  - [Continued Development](#continued-development)
-  - [Useful Resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -35,26 +33,31 @@ Users should be able to:
 
 ## My Process
 
+- Visually inspect and review design files in Figma
+  - Identify any problem areas before trying to implement them
+  - Identify areas of the page that respond to changes in screen size
+- Add HTML structure
+  - Add semantic elements
+  - Add heading, text content
+- Add mobile-first CSS styling
+  - Add custom properties for colors
+  - Add typography properties for heading / text selectors
+  - Add primary and secondary buttons properties
+- Improve accessibility - https://wave.webaim.org/
+  - Heading tag order, img alt tags, aria labels, etc..
+
 ### Built With
 
 - Semantic HTML5 markup
 - CSS
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+  - Custom properties
+  - Flexbox
+- Mobile-First workflow
+- Figma
 
 ### What I Learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-### Continued Development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful Resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I learned how to better document and explain my proces of working through a small project like this.
 
 ## Author
 
