@@ -47,10 +47,7 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
   text-align: center;
-  position: relative;
   min-height: 100vh;
-  padding: 48px 24px;
-  padding-bottom: 600px;
 }
 
 /* Typography */
@@ -129,6 +126,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 48px 24px;
+  margin-bottom: 0;
+}
+
+.header-content {
+  max-width: 457px;
 }
 
 .logo {
@@ -172,21 +175,20 @@ h1 {
 .transition-line {
   margin: 0 auto;
   height: 84px;
-  background-color: var(--gray-text-color);
+  background-color: #87879d40;
   width: 1px;
-  opacity: 0.25;
 }
 
 /* Makes the circle with the number inside of it */
 .transition-num {
+  font-weight: bold;
   margin: 0 auto;
   height: 55px;
   width: 55px;
   color: var(--gray-text-color);
-  border: 1px solid var(--gray-text-color);
+  border: 1px solid #87879d40;
   border-radius: 100%;
-  opacity: 0.25;
-
+  background-color: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,15 +196,16 @@ h1 {
 
 /* Main Section */
 main {
-  margin-bottom: 64px;
+  padding: 0 24px;
+  margin-bottom: 176px;
 }
 
 .img-container {
   display: grid;
   grid-template-columns: repeat(2, 150px);
-  grid-template-columns: repeat(2, 150px);
   gap: 25px;
   margin-bottom: 64px;
+  justify-content: center;
 }
 
 .grid-img {
@@ -211,6 +214,7 @@ main {
 }
 
 .main-text {
+  margin: 0 auto;
   max-width: 573px;
 }
 
@@ -224,15 +228,22 @@ main {
 
 /* Footer Section */
 footer {
-  width: calc(100% + 48px);
-  background-color: var(--primary-color);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  background-image: url('/assets/mobile/image-footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.footer-overlay {
+  background-color: #4d96a9bf;
+  padding: 24px;
 }
 
 .footer-h2 {
   color: var(--bg-color);
+  margin-top: 92px;
   margin-bottom: 24px;
 }
 
@@ -243,6 +254,14 @@ footer {
 
 .footer-btn {
   margin-bottom: 64px;
+}
+
+.footer-transition-container {
+  position: absolute;
+  top: -112px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .attribution {
@@ -265,6 +284,17 @@ a {
 
 /* Tablet Media Query */
 @media screen and (min-width: 768px) {
+  .btn-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+
   .hero-img-mobile {
     height: 303px;
     width: 820px;
@@ -279,10 +309,49 @@ a {
     font-size: 40px;
     line-height: 44px;
   }
+
+  p {
+    font-size: 18px;
+  }
+
+  main {
+    margin-bottom: 192px;
+  }
+
+  .img-container {
+    grid-template-columns: repeat(4, 165px);
+    gap: 11px;
+  }
+
+  .grid-img {
+    height: auto;
+  }
+
+  .main-text {
+    max-width: 540px;
+  }
+
+  footer {
+    background-image: url('./assets/tablet/image-footer.jpg');
+  }
+
+  .footer-h2 {
+    margin-bottom: 32px;
+  }
+
+  .footer-p {
+    margin: 0 auto;
+    max-width: 573px;
+    margin-bottom: 40px;
+  }
 }
 
 /* Desktop Media Query */
 @media screen and (min-width: 1400px) {
+  header {
+    margin-top: 80px;
+  }
+
   /* Replace hero img  */
   h1 {
     font-size: 64px;
@@ -291,5 +360,9 @@ a {
 
   p {
     font-size: 18px;
+  }
+
+  footer {
+    background-image: url('./assets/desktop/image-footer.jpg');
   }
 }
