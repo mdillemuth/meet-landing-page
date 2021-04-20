@@ -131,7 +131,17 @@ header {
 }
 
 .header-content {
+  margin: 0 24px;
   max-width: 457px;
+  padding: 0 24px;
+}
+
+.header-desktop-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -288,6 +298,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 80px;
   }
 
   .btn-primary {
@@ -321,6 +332,7 @@ a {
   .img-container {
     grid-template-columns: repeat(4, 165px);
     gap: 11px;
+    margin-bottom: 40px;
   }
 
   .grid-img {
@@ -352,7 +364,46 @@ a {
     margin-top: 80px;
   }
 
-  /* Replace hero img  */
+  .header-content {
+    max-width: 540px;
+    height: 304px;
+  }
+
+  .hero-img-mobile {
+    display: none;
+  }
+
+  .header-desktop-container {
+    flex-direction: row;
+    margin-bottom: 110px;
+  }
+
+  .hero-img-desktop-left {
+    width: 400px;
+    height: 320px;
+    background-image: url('./assets/desktop/image-hero-left.png');
+    background-position: center;
+    background-position-x: -10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hero-img-desktop-right {
+    width: 400px;
+    height: 320px;
+    background-image: url('./assets/desktop/image-hero-right.png');
+    background-position: center;
+    background-position-x: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .img-container {
+    grid-template-columns: repeat(4, 255px);
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
   h1 {
     font-size: 64px;
     line-height: 64px;
@@ -364,5 +415,38 @@ a {
 
   footer {
     background-image: url('./assets/desktop/image-footer.jpg');
+    height: 308px;
+  }
+
+  .footer-overlay {
+    height: 100%;
+  }
+
+  .footer-h2,
+  .footer-p,
+  .footer-btn {
+    margin: 0;
+  }
+
+  .footer-h2 {
+    max-width: 350px;
+  }
+
+  .footer-p {
+    max-width: 350px;
+    margin-left: 120px;
+    margin-right: 92px;
+  }
+
+  .footer-btn {
+    width: 193px;
+    height: 58px;
+  }
+
+  .footer-content {
+    height: 308px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
