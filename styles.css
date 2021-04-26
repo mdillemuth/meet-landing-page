@@ -43,6 +43,7 @@ img {
 }
 
 body {
+  position: relative;
   background-color: var(--bg-color);
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
@@ -55,14 +56,14 @@ h1 {
   color: var(--dark-text-color);
   font-size: 40px;
   line-height: 44px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 h2 {
   color: var(--dark-text-color);
   font-size: 36px;
   line-height: 32px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 p {
@@ -76,7 +77,7 @@ p {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 4px;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -87,7 +88,7 @@ p {
   color: #ffffff;
   border-radius: 29px;
   border: none;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 0.2px;
 }
 
@@ -444,7 +445,7 @@ a {
   }
 
   .footer-content {
-    height: 308px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
